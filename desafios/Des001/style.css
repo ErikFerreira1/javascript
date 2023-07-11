@@ -1,0 +1,39 @@
+@charset "UTF-8";
+body {
+    background-color: rgb(70, 70, 163);
+    font: normal 18px arial;
+}
+header {
+    color: white;
+    text-align: center;
+}
+
+main {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.363);
+}
+#msg {
+    text-align: center;
+    padding-bottom: 20px;
+}
+#foto {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
+}
+#imagem {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
