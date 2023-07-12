@@ -26,7 +26,7 @@ function verificar() {
                 //idoso
                 img.setAttribute('src', 'imagens/idosomas.webp')
             }
-            
+
         }else {
             gênero = 'Feminino'
             if (idade >= 0 && idade < 10) {
@@ -42,6 +42,7 @@ function verificar() {
                 //idoso
                 img.setAttribute('src', 'imagens/idosafem.webp')
             }
+            
         }
         res.innerHTML = `Detectamos ${gênero} com ${idade} anos.`
         res.appendChild(img)
