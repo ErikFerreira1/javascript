@@ -26,6 +26,7 @@ function verificar() {
                 //idoso
                 img.setAttribute('src', 'imagens/idosomas.webp')
             }
+            
         }else {
             gênero = 'Feminino'
             if (idade >= 0 && idade < 10) {
