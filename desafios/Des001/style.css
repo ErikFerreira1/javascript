@@ -16,21 +16,6 @@ main {
     margin: auto;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.363);
 }
-#msg {
-    text-align: center;
-    padding-bottom: 20px;
-}
-#foto {
-    display: flex;
-    flex-direction: column;
-    justify-content: baseline;
-    align-items: center;
-}
-#imagem {
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
-}
 
 footer {
     color: white;
