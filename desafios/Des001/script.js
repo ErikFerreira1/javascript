@@ -42,6 +42,7 @@ function verificar() {
                 //idoso
                 img.setAttribute('src', 'imagens/idosafem.webp')
             }
+
             
         }
         res.innerHTML = `Detectamos ${gênero} com ${idade} anos.`
