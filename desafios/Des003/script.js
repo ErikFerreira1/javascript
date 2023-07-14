@@ -4,6 +4,6 @@ function verificar() {
     var passo = document.getElementById('passo')
     var res = document.getElementById('res')
     for(inicio;fim;passo){
-        res.innerHTML(`${'for'}`)
+        res.innerHTML = `${inicio}`
     }
-}
+}   
