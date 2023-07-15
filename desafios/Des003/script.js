@@ -15,12 +15,12 @@ function verificar() {
         if(i < f) {
             // Contagem crescente
             for(let c = i; c <= f; c += p) {
-                res.innerHTML += `${c}`
+                res.innerHTML += `${c} `
             }
         } else {
             // Contagem regressiva
             for(let c = i; c <= f; c -= p) {
-                res.innerHTML += `${c}`
+                res.innerHTML += `${c} `
             }
         }
         
