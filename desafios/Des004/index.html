@@ -8,26 +8,16 @@
 </head>
 <body>
     <header>
-        <h1>Verificador de idade</h1>
+        <h1>Gerador de tabuada</h1>
     </header>
     <main>
         <div>
-            <p>Inicio:
-                <input type="number" name="txtano" id="inicio" min="0">
-            </p>
-            <p>Fim:
-                <input type="number" name="txtano" id="fim" min="0">
-            </p>
-            <p>Passo:
-                <input type="number" name="txtano" id="passo" min="1">
-            </p>
-            <p>
-                <input type="button" value="Verificar" onclick="verificar()">
+            <p>Número:
+                <input type="number" name="txtano" id="número" min="0">
+                <input type="button" value="Gerar tabuada" onclick="verificar()">
             </p>
         </div>
-        <div id="res">
-            Prencha os dados a cima para ver o resultado!
-        </div>
+        <select name="tabuada" id="seltab"></select>
     </main>
     <footer>
         <p>&copy; CursoemVideo</p>
