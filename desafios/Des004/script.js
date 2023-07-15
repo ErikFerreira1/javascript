@@ -6,9 +6,10 @@ function verificar() {
     } else {
         let num = Number(número.value)
         let c = 1
-        while(cont <= 10){
+        tab.innerHTML = ''
+        while(c <= 10){
             let item = document.createElement('option')
-            item.text = `${n} x ${cont} = ${n*cont}`
+            item.text = `${num} x ${c} = ${num*c}`
             tab.appendChild(item)
             c++
             }
