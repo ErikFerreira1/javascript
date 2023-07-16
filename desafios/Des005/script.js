@@ -1,19 +1,11 @@
-function verificar() {
-    let número = document.getElementById('número')
-    let tab = document.getElementById('seltab')
-    if(número.value < 0 || número.value.length == 0) {
-        alert('[ERRO] Número inválido')
+let list_num = []
+function adicionar() {
+    let num = document.getElementById('número')
+    let res = document.getElementById('option')
+    if (num.value > 100 || num.value < 1 || num.value.length == 0){
+        alert('Digite um valor válido!')
     } else {
-        let num = Number(número.value)
-        let c = 1
-        tab.innerHTML = ''
-        while(c <= 10){
-            let item = document.createElement('option')
-            item.text = `${num} x ${c} = ${num*c}`
-            tab.appendChild(item)
-            c++
-            }
-        }
-
-        
+        res.innerText = `Número ${num.value} foi adicionado`
+        list_num.push(num)
     }
+}
