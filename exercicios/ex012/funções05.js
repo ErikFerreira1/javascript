@@ -1,4 +1,4 @@
-function fatorial(n) {
+function fatorial(n) { // segundo método
     if (n == 1) {
         return 1
     } else {
