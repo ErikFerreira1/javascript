@@ -11,3 +11,6 @@ function adicionar() {
         alert(`O número ${num.value} já foi adicionado`)
     }
 }
+function verificar() {
+    
+}
