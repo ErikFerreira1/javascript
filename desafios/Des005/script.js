@@ -4,8 +4,7 @@ function adicionar() {
     let res = document.getElementById('option')
     if (num.value > 100 || num.value < 1 || num.value.length == 0){
         alert('Digite um valor válido!')
-    } else {
-        res.innerText = `Número ${num.value} foi adicionado`
-        list_num.push(num)
+    } else if(list_num.indexOf(num)) {
+        
     }
 }
