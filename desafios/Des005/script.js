@@ -18,7 +18,16 @@ function adicionar() {
 }
 function verificar() {
     let info = document.getElementById('info')
-    info.innerHTML = `Ao todo temos, foram adicionados ${list_num.length} números`
+    let posição = list_num.length
+    let soma = 0
+    for(let pos in list_num){
+        soma += parseInt(list_num[pos])
+    }
+    let media = soma / posição
+
+    info.innerHTML = `Ao todo temos, foram adicionados ${posição} números`
     info.innerHTML += `<p>O maior valor foi ${Math.max(...list_num)} e o menor valor foi ${Math.min(...list_num)}</p>`
-    // utilizasse o += para adionar mais um parágrafo
+    info.innerHTML += `<p>A soma entre todos os valores é ${soma} </p>`
+    info.innerHTML += `<p>A média entre todos os valores é ${media} </p>`
+    
 }
