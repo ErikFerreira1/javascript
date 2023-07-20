@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TimeOut</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+        input{
+            width: 300px;
+            height: 200px;
+            font-size: 25px;
+            color: white;
+           
+            
+        }
+        input#começou {
+            background-color: green;
+            cursor: pointer;
+        }
+        input#parou {
+            background-color: red;
+            cursor: pointer;
+        }
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Contagem</h1>
+    <h1 id="teste"></h1>
+    <input type="button" id="começou" onclick="cliclou()" value="Clique aqui">
+    <input type="button" id="parou"   onclick="parou()" value="Parar contagem">
+    
+    <script src="SetTimeOut.js"></script>
+
+</body>
+</html>
