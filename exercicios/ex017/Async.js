@@ -21,9 +21,9 @@ segundafuncao()
 
 
 function getUser(id) {
-    return fetch(`https://regres.in/api/users?id=${id}`) //Recurso para requisições
-    .then((data)=>data.json())
-    .catch((err)=>console.log(err))
+    return fetch(`https://regres.in/api/users?id=${id}`) //Recurso para requisições, o resultado retorna uma promise
+    .then((data)=>data.json())//.then para tira o resultado de dentro de uma promise
+    .catch((err)=>console.log(err))//tratamento de erros promise
 }
 
 async function showUserName(id){ 
