@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css'; 
-impo
+import HellWorld from './components/helloWorld';
 
 
 function App() { 
@@ -18,7 +18,7 @@ function App() {
       <p>Olá, {name}</p>
       <p>Soma: {sum(1, 2)}</p>
       <img src= {url} alt="Minha imagem" />
-      <HellWorld/>
+      <HelloWorld/>
     </div>
   );
 }
