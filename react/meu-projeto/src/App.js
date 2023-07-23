@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import './App.css'; 
+impo
+
 
 function App() { 
     const name = 'Matheus' // funções apenas dentro da function app
@@ -11,11 +13,12 @@ function App() {
     const url = 'https://via.placeholder.com/150'
 
   return (               
-    <div className="App"> // Apenas classname não pode se usar class
+    <div className="App"> 
       <h1>Olá React!</h1>
       <p>Olá, {name}</p>
       <p>Soma: {sum(1, 2)}</p>
       <img src= {url} alt="Minha imagem" />
+      <HellWorld/>
     </div>
   );
 }
