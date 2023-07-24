@@ -1,8 +1,11 @@
 //COMPONENTS
 import Firstcomponent from "./components/FirstComponent" //importação de componente
+import TemplateExpressions from "./components/TemplateExpressions"
+
 
 //CSS
 import './App.css'
+
 
 function App() {
   return (
@@ -11,6 +14,7 @@ function App() {
       <h2>
         Estou muito feliz em estar aprendendo react!
       </h2>
+      <TemplateExpressions/>
       <Firstcomponent/>
     </div>
   )
