@@ -1,3 +1,5 @@
+import MyComponent from "./MyComponent"
+
 const TemplateExpressions = ()  => {
    
    const name = "Erik"
@@ -9,6 +11,7 @@ const TemplateExpressions = ()  => {
         <div>
             <h1>Olá, {name}!</h1>
             <h1>Você é {date.profissão}</h1> {/*Utilização de JS dentro do JSX*/}
+            <MyComponent/>
         </div>
     )
 }
