@@ -1,4 +1,4 @@
-const FirstComponent = () => {
+const FirstComponent = () => { // Utilização de components
     return (
         <div>
             <h1>Meu Primeiro componente</h1>
@@ -6,4 +6,4 @@ const FirstComponent = () => {
     )
 }
 
-export default FirstComponent
+export default FirstComponent // Exportação do component
