@@ -8,7 +8,7 @@ function App() {
 
   return (
     <div>
-      <h1>HelloWorld</h1>
+      <h1>Hello World</h1>
       <h2>
         Estou muito feliz em estar aprendendo react!
       </h2>
