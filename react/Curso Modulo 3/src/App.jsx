@@ -2,6 +2,7 @@ import Img1 from "./assets/img1.jpg"; // Imagem em assets
 import "./App.css";
 import ManageData from "./components/ManageData";
 import ListRender from "./components/ListRender";
+import ConditionalRender from "./components/ConditionalRender";
 function App() {
   return (
     <div className="App">
@@ -14,6 +15,7 @@ function App() {
       </div>
       <ManageData />
       <ListRender />
+      <ConditionalRender />
     </div>
   );
 }
