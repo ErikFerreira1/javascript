@@ -1,5 +1,7 @@
-import Img1 from "./assets/img1.jpg"; // Imagem em p
+import Img1 from "./assets/img1.jpg"; // Imagem em assets
 import "./App.css";
+import ManageData from "./components/ManageData";
+import ListRender from "./components/ListRender";
 
 function App() {
   return (
@@ -11,6 +13,8 @@ function App() {
       <div>
         <img src={Img1} alt="praia" /> {/* Imagem em assets*/}
       </div>
+      <ManageData/>
+      <ListRender/>
     </div>
   );
 }
