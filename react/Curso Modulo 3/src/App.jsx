@@ -7,14 +7,17 @@ import ShowUserName from "./components/ShowUserName";
 import { useState } from "react";
 import CarDetails from "./components/CarDetails";
 import Fragments from "./components/Fragments";
+import Container from "./components/Container";
+import ExecuteFunction from "./components/ExecuteFunction";
 function App() {
   const name = "José";
   const [nome] = useState("Maria");
   const cars = [
     { id: 1, Marca: "KIA", Cor: "Branco", Km: 12121, NewCar: false },
-    { id: 1, Marca: "Renauld", Cor: "Azul", Km: 5497, NewCar: false },
-    { id: 1, Marca: "Volvo", Cor: "Preto", Km: 0, NewCar: true },
+    { id: 2, Marca: "Renauld", Cor: "Azul", Km: 5497, NewCar: false },
+    { id: 3, Marca: "Volvo", Cor: "Preto", Km: 0, NewCar: true },
   ];
+  const ShowMessage = () => {console.log('Evento do componente pai!')} //componente pai
   return (
     <div className="App">
       <h1>Avançando em REACT!</h1>
@@ -38,6 +41,7 @@ function App() {
       {/* Loop usando todas as funções. */}
       {cars.map((car) => (
         <CarDetails
+          key={car.id}
           Marca={car.Marca}
           Km={car.Km}
           Cor={car.Cor}
@@ -45,6 +49,10 @@ function App() {
         />
       ))}
       <Fragments />
+      <Container myValue='testing'>
+          <p>E este é o conteúdo</p>
+      </Container>
+      <ExecuteFunction myFunction={ShowMessage}/> {/* Linkando com o componente filho */}
     </div>
   );
 }
