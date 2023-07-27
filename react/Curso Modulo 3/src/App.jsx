@@ -9,6 +9,8 @@ import CarDetails from "./components/CarDetails";
 import Fragments from "./components/Fragments";
 import Container from "./components/Container";
 import ExecuteFunction from "./components/ExecuteFunction";
+import Message from "./components/Message";
+import ChangeMessageState from "./components/ChangeMessageState";
 function App() {
   const name = "José";
   const [nome] = useState("Maria");
@@ -17,7 +19,15 @@ function App() {
     { id: 2, Marca: "Renauld", Cor: "Azul", Km: 5497, NewCar: false },
     { id: 3, Marca: "Volvo", Cor: "Preto", Km: 0, NewCar: true },
   ];
-  const ShowMessage = () => {console.log('Evento do componente pai!')} //componente pai
+  const ShowMessage = () => {
+    console.log("Evento do componente pai!");
+  }; //componente pai
+
+  const [message, setMessage] = useState("");
+  const handleMessage = (msg) => {
+    setMessage(msg);
+  };
+
   return (
     <div className="App">
       <h1>Avançando em REACT!</h1>
@@ -37,7 +47,6 @@ function App() {
       <CarDetails Marca="VW" Km={4500} Cor="Vermelho" NewCar={false} />
       {/* Pode reaproveitar classes. */}
       <CarDetails Marca="Ferrari" Km={0} Cor="Amarelo" NewCar={true} />
-
       {/* Loop usando todas as funções. */}
       {cars.map((car) => (
         <CarDetails
@@ -49,10 +58,13 @@ function App() {
         />
       ))}
       <Fragments />
-      <Container myValue='testing'>
-          <p>E este é o conteúdo</p>
+      <Container myValue="testing">
+        <p>E este é o conteúdo</p>
       </Container>
-      <ExecuteFunction myFunction={ShowMessage}/> {/* Linkando com o componente filho */}
+      <ExecuteFunction myFunction={ShowMessage} />{" "}
+      {/* Linkando com o componente filho */}
+      <Message msg={message}/>
+      <ChangeMessageState handleMessage={handleMessage}/>
     </div>
   );
 }
