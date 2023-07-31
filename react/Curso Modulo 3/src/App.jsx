@@ -11,6 +11,7 @@ import Container from "./components/Container";
 import ExecuteFunction from "./components/ExecuteFunction";
 import Message from "./components/Message";
 import ChangeMessageState from "./components/ChangeMessageState";
+import UserDatails from "./components/UserDatails";
 function App() {
   const name = "José";
   const [nome] = useState("Maria");
@@ -65,6 +66,7 @@ function App() {
       {/* Linkando com o componente filho */}
       <Message msg={message}/>
       <ChangeMessageState handleMessage={handleMessage}/>
+      <UserDatails/>
     </div>
   );
 }
