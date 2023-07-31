@@ -1,10 +1,13 @@
 import { useState } from "react";
 import "./App.css";
 import MyComponent from "./components/MyComponent";
+import Title from "./components/Title"
+
 
 function App() {
   const n = 5;
   const [name] = useState("Erik");
+  const redTitle = false;
   return (
     <>
       <div>
@@ -31,6 +34,14 @@ function App() {
         >
           {name}
         </h1>
+        {/* CLASSE DINÂMICA */}
+        <h2 className={redTitle === true ? "red-title" : "title"}>
+          TÍTULO DINÂMICO
+        </h2>{" "}
+        {/* Troca o estilo dependendo do nome final da classe */}
+
+        {/* CSS MODULES */}
+        <Title/>
       </div>
     </>
   );

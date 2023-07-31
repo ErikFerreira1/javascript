@@ -1,4 +1,15 @@
 .ficandolouco {
-    color: gold;
-    
+  color: gold;
+}
+
+.red-title {
+  border: 2px solid white;
+  color: rgb(165, 15, 165);
+  padding: 10px;
+}
+
+.title {
+  border: 2px solid white;
+  color: gold;
+  padding: 10px;
 }
