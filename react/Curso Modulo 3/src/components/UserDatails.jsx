@@ -16,7 +16,11 @@ const UserDatails = () => {
           <p>{user.age} anos</p>
           <p>Profissão: {user.prof}</p>
 
-          {user.age >= 18 ?<p>está qualificado!</p> : <p>não está qualificado</p>}
+          {user.age >= 18 ? (
+            <p>está qualificado!</p>
+          ) : (
+            <p>não está qualificado</p>
+          )}
         </div>
       ))}
     </div>
