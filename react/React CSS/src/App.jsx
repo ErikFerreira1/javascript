@@ -41,7 +41,7 @@ function App() {
         {/* Troca o estilo dependendo do nome final da classe */}
 
         {/* CSS MODULES */}
-        <Title/>
+        <Title/> {/* Por fim, importe */}
       </div>
     </>
   );
