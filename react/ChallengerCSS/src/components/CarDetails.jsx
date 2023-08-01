@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styles from "./Car.modules.css?inline"
+import styles from "./Car.module.css"
 
 const CarDetails = () => {
   const [cars] = useState([
@@ -12,9 +12,9 @@ const CarDetails = () => {
       <h1>Detalhes de carros</h1>
       {cars.map((car) => (
         <div key={car.id}>
-            <h1 className={styles.Marca}>Marca: {car.Marca}</h1>
-            <h1 className={styles.Cor}>Cor: {car.Cor}</h1>
-            <h1 className={styles.Km}>Km: {car.Km}</h1>
+            <h1 className={styles.My_Marca}>Marca: {car.Marca}</h1>
+            <h1 className={styles.My_Cor}>Cor: {car.Cor}</h1>
+            <h1 className={styles.My_Km}>Km: {car.Km}</h1>
         </div>
       ))}
     </div>
