@@ -1,15 +1,3 @@
-* {
-  padding: 0px;
-  margin: 0px;
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  box-sizing: border-box;
-  height: 100%;
-}
-h1 {
-  font-size: 5em;
-  color: white;
-}
-
 .index {
   display: flex;
   justify-content: center;
