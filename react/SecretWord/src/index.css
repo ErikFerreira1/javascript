@@ -23,7 +23,7 @@ body {
 }
 
 button {
-  background: #a3e0ff;
+  background: #4f96b9;
   color: white;
   padding: 0px 45px;
   border-radius: 25px;
@@ -35,5 +35,5 @@ button {
   transition: 0.4s;
 }
 button:hover {
-  background-color: #6294b1;
+  background-color: #2172a1;
 }
