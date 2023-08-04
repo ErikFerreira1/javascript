@@ -37,3 +37,11 @@ button {
 button:hover {
   background-color: #2172a1;
 }
+
+h1{
+  padding-top: 50px;
+  padding-bottom: 30px;
+  font-size: 5em;
+  color: white;
+  text-transform: uppercase;
+}
