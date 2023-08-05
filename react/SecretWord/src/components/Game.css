@@ -31,11 +31,13 @@
 .letterContainer p {
     margin-bottom: 1.2em;
     color: white;
+    
 }
 .letterContainer form {
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 .letterContainer input {
     height: 50px;
@@ -43,4 +45,5 @@
     font-size: 2em;
     text-align: center;
     margin-right: 1em;
+    color: black;
 }
