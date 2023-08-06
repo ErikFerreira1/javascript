@@ -1,27 +1,33 @@
 import "./App.css";
 import { useState, useEffect } from "react";
+// 4 - custom hook
+import { useFetch } from "./hooks/useFetch";
 
 const url = "http://localhost:3000/products"; //requisição do json
 
 function App() {
   const [products, setProducts] = useState([]);
+
+  // 4 - custom hook
+  const { data: items } = useFetch(url);
+
   const [name, setName] = useState("");
   const [price, setPrice] = useState("");
 
   // 1 - Regatando dados
-  useEffect(() => {
-    async function fetchData() {
-      {
-        /* NÃO SE USA ASYNC DENTRO DE EFFECT PURO, DEVE SER FEITO DESSA FORMA*/
-      }
-      const res = await fetch(url); // resposta do json
-
-      const data = await res.json(); // transformar em objeto para o front end
-
-      setProducts(data);
-    }
-    fetchData();
-  }, []);
+  // useEffect(() => {
+  //   async function fetchData() {
+  //     {
+  //       /* NÃO SE USA ASYNC DENTRO DE //EFFECT PURO, DEVE SER FEITO DESSA //FORMA*/
+  //     }
+  //     const res = await fetch(url); // //resposta do json
+  //
+  //     const data = await res.json(); // //transformar em objeto para o front //end
+  //
+  //     setProducts(data);
+  //   }
+  //    fetchData();
+  //  }, []);
 
   // 2 - adição produtos
 
@@ -44,25 +50,24 @@ function App() {
 
     // 3 - carregamento dinâmico
 
-    const addedProduct = await res.json() // transformando em objecto js
+    const addedProduct = await res.json(); // transformando em objecto js
 
-    setProducts((prevProducts)=> [...prevProducts, addedProduct])
+    setProducts((prevProducts) => [...prevProducts, addedProduct]);
 
-    setName("") // deixa a caixa vazia após o envio 
-    setPrice("")
+    setName(""); // deixa a caixa vazia após o envio
+    setPrice("");
   };
-
-  
 
   return (
     <div>
       <h1>LISTA DE PRODUTOS</h1>
       <ul>
-        {products.map((product) => (
-          <li key={product.id}>
-            {product.name} - Preço R${product.price}
-          </li>
-        ))}
+        {items &&
+          items.map((product) => (
+            <li key={product.id}>
+              {product.name} - Preço R${product.price}
+            </li>
+          ))}
       </ul>
       <div className="add_product">
         <form onSubmit={handleSubmit}>
