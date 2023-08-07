@@ -24,7 +24,26 @@
       "name": "Bola",
       "price": "30",
       "id": 5
+    },
+    {
+      "name": "Teclado",
+      "price": "130",
+      "id": 6
+    },
+    {
+      "name": "Teclado",
+      "price": "130",
+      "id": 7
+    },
+    {
+      "name": "Teclado",
+      "price": "130",
+      "id": 8
+    },
+    {
+      "name": "Teclado",
+      "price": "130",
+      "id": 9
     }
-
   ]
 }

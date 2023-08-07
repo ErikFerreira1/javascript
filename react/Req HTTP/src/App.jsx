@@ -9,25 +9,9 @@ function App() {
   const [products, setProducts] = useState([]);
 
   // 4 - custom hook
-  const { data: items } = useFetch(url);
-
+  const { data: items, httpConfig } = useFetch(url);
   const [name, setName] = useState("");
   const [price, setPrice] = useState("");
-
-  // 1 - Regatando dados
-  // useEffect(() => {
-  //   async function fetchData() {
-  //     {
-  //       /* NÃO SE USA ASYNC DENTRO DE //EFFECT PURO, DEVE SER FEITO DESSA //FORMA*/
-  //     }
-  //     const res = await fetch(url); // //resposta do json
-  //
-  //     const data = await res.json(); // //transformar em objeto para o front //end
-  //
-  //     setProducts(data);
-  //   }
-  //    fetchData();
-  //  }, []);
 
   // 2 - adição produtos
 
@@ -39,20 +23,8 @@ function App() {
       price,
     };
 
-    const res = await fetch(url, {
-      method: "POST", // Método que está sendo enviado
-      headers: {
-        // formato do input que está sendo enviado
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(product), // transform para um objeto json
-    });
-
-    // 3 - carregamento dinâmico
-
-    const addedProduct = await res.json(); // transformando em objecto js
-
-    setProducts((prevProducts) => [...prevProducts, addedProduct]);
+    // 5 - refatorando post
+    httpConfig(product, "POST"); // produto e método
 
     setName(""); // deixa a caixa vazia após o envio
     setPrice("");
