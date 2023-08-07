@@ -31,19 +31,19 @@
       "id": 6
     },
     {
-      "name": "Teclado",
-      "price": "130",
-      "id": 7
+      "name": "Mesa",
+      "price": "400",
+      "id": 14
     },
     {
-      "name": "Teclado",
-      "price": "130",
-      "id": 8
+      "name": "Cadeira gamer",
+      "price": "1200",
+      "id": 15
     },
     {
-      "name": "Teclado",
-      "price": "130",
-      "id": 9
+      "name": "Aquario",
+      "price": "50",
+      "id": 21
     }
   ]
 }

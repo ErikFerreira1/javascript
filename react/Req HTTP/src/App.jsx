@@ -9,7 +9,7 @@ function App() {
   const [products, setProducts] = useState([]);
 
   // 4 - custom hook
-  const { data: items, httpConfig } = useFetch(url);
+  const { data: items, httpConfig, loading, erro } = useFetch(url);
   const [name, setName] = useState("");
   const [price, setPrice] = useState("");
 
@@ -33,14 +33,19 @@ function App() {
   return (
     <div>
       <h1>LISTA DE PRODUTOS</h1>
-      <ul>
-        {items &&
-          items.map((product) => (
-            <li key={product.id}>
-              {product.name} - Preço R${product.price}
-            </li>
-          ))}
-      </ul>
+      {/* 6 - loading */}
+      {loading && <p>Carregando dados...</p>}
+      {erro && <p>{erro}</p>}
+      {!loading && (
+        <ul>
+          {items &&
+            items.map((product) => (
+              <li key={product.id}>
+                {product.name} - Preço R${product.price}
+              </li>
+            ))}
+        </ul>
+      )}
       <div className="add_product">
         <form onSubmit={handleSubmit}>
           {" "}
@@ -64,7 +69,9 @@ function App() {
               onChange={(e) => setPrice(e.target.value)}
             />
           </label>
-          <input type="submit" value="Criar" />
+          {/* 7 - state de loading no post */}
+          {loading && <input type="submit" value="Aguarde" disabled />} {/* Desabilita o botão então estiver no loading */}
+          {!loading && <input type="submit" value="Criar" />} {/* Habilita o botão quando não estiver no loading */}
         </form>
       </div>
     </div>
