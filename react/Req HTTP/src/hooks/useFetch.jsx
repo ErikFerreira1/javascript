@@ -73,16 +73,13 @@ export const useFetch = (url) => {
 
         const json = await res.json();
         setCallFetch(json);
-
       } else if (method === "DELETE") {
-        
         const apagarURL = `${url}/${itemid}`;
 
         const res = await fetch(apagarURL, config);
         const json = await res.json();
         setCallFetch(json);
       }
-      
     };
     httpRequest();
   }, [config, method, url]);
