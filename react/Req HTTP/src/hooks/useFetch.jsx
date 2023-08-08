@@ -26,6 +26,10 @@ export const useFetch = (url) => {
       });
 
       setMethod(method);
+    }if (method === "DELETE") {
+      
+
+
     }
   };
 

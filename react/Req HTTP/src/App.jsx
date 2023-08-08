@@ -29,8 +29,14 @@ function App() {
     setName(""); // deixa a caixa vazia após o envio
     setPrice("");
   };
-  const handleDelete = () => {
-    
+
+  const handleDelete = async(e) => {
+    e.preventDefault()
+
+    const excluir = {
+      id
+    }
+    httpConfig(excluir, "DELETE")
   };
 
   return (
