@@ -29,6 +29,9 @@ function App() {
     setName(""); // deixa a caixa vazia após o envio
     setPrice("");
   };
+  const handleDelete = () => {
+    
+  };
 
   return (
     <div>
@@ -42,6 +45,7 @@ function App() {
             items.map((product) => (
               <li key={product.id}>
                 {product.name} - Preço R${product.price}
+                <input type="button" value="Exluir" onClick={handleDelete} />
               </li>
             ))}
         </ul>
@@ -70,8 +74,10 @@ function App() {
             />
           </label>
           {/* 7 - state de loading no post */}
-          {loading && <input type="submit" value="Aguarde" disabled />} {/* Desabilita o botão então estiver no loading */}
-          {!loading && <input type="submit" value="Criar" />} {/* Habilita o botão quando não estiver no loading */}
+          {loading && <input type="submit" value="Aguarde" disabled />}{" "}
+          {/* Desabilita o botão então estiver no loading */}
+          {!loading && <input type="submit" value="Criar" />}{" "}
+          {/* Habilita o botão quando não estiver no loading */}
         </form>
       </div>
     </div>
