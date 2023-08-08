@@ -24,18 +24,15 @@ function App() {
     };
 
     // 5 - refatorando post
-    httpConfig(product, "POST"); // produto e método
+    httpConfig(product, "POST"); // data e método
 
     setName(""); // deixa a caixa vazia após o envio
     setPrice("");
   };
 
-  const handleDelete = async(e) => {
-    e.preventDefault()
+  const handleDelete = (id) => {
 
-    const excluir = {
-      id
-    }
+    const excluir = (id)
     httpConfig(excluir, "DELETE")
   };
 
@@ -51,7 +48,7 @@ function App() {
             items.map((product) => (
               <li key={product.id}>
                 {product.name} - Preço R${product.price}
-                <input type="button" value="Exluir" onClick={handleDelete} />
+                <button onClick={() => handleDelete(product.id)} value={product.id}>Excluir</button>
               </li>
             ))}
         </ul>

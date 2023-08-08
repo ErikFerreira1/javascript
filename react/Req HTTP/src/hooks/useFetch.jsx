@@ -8,6 +8,7 @@ export const useFetch = (url) => {
   const [config, setConfig] = useState(null); // configura cabeçarios, posts...
   const [method, setMethod] = useState(null); // diz que método está utilizando, get ou post
   const [callFetch, setCallFetch] = useState(false); // quando adicionar um dado no sistema vai recarregar o useEffect
+  const [itemid, setItemId] = useState();
 
   // 6 - loading
   const [loading, setLoading] = useState(false);
@@ -26,10 +27,16 @@ export const useFetch = (url) => {
       });
 
       setMethod(method);
-    }if (method === "DELETE") {
-      
+    } else if (method === "DELETE") {
+      setConfig({
+        method,
+        headers: {
+          "Content-type": "application/json",
+        },
+      });
 
-
+      setMethod(method);
+      setItemId(data);
     }
   };
 
@@ -42,15 +49,13 @@ export const useFetch = (url) => {
         const res = await fetch(url);
 
         const json = await res.json();
-  
+
         setData(json);
-  
+
         setLoading(false);
-        
       } catch (erro) {
-        console.log(erro.message)
-        setErro("Houve algum erro ao carregar os dados!")
-        
+        console.log(erro.message);
+        setErro("Houve algum erro ao carregar os dados!");
       }
     };
 
@@ -68,7 +73,16 @@ export const useFetch = (url) => {
 
         const json = await res.json();
         setCallFetch(json);
+
+      } else if (method === "DELETE") {
+        
+        const apagarURL = `${url}/${itemid}`;
+
+        const res = await fetch(apagarURL, config);
+        const json = await res.json();
+        setCallFetch(json);
       }
+      
     };
     httpRequest();
   }, [config, method, url]);
