@@ -31,9 +31,8 @@ function App() {
   };
 
   const handleDelete = (id) => {
-
-    const excluir = (id)
-    httpConfig(excluir, "DELETE")
+    const excluir = id;
+    httpConfig(excluir, "DELETE");
   };
 
   return (
@@ -48,7 +47,12 @@ function App() {
             items.map((product) => (
               <li key={product.id}>
                 {product.name} - Preço R${product.price}
-                <button onClick={() => handleDelete(product.id)} value={product.id}>Excluir</button>
+                <button
+                  onClick={() => handleDelete(product.id)}
+                  value={product.id}
+                >
+                  Excluir
+                </button>
               </li>
             ))}
         </ul>
