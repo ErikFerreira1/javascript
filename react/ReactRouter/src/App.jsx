@@ -26,6 +26,7 @@ function App() {
           {/* Rota Dinâmica */}
           <Route path="/products/:id" element={<Products />} />{" "}
           {/* link para o componente products */}
+          {/* Nested Routes */}
           <Route path="/products/:id/info" element={<Info />} />
         </Routes>
       </BrowserRouter>
