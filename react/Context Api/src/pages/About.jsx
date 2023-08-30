@@ -1,7 +1,7 @@
 import { useCounterContext } from "../hooks/useCounterContext";
 
 const About = () => {
-  const { counter } = useCounterContext()
+  const { counter } = useCounterContext();
   return (
     <>
       <h1>SOBRE</h1>
