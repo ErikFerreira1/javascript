@@ -13,15 +13,15 @@ const PraticaUseReduce = () => {
   ];
 
   const taskReducer = (state, action) => {
-    switch(action.type) {
-      case "ADD": 
+    switch (action.type) {
+      case "ADD":
         const newTask = {
           id: Math.random(),
-          text: teaskText
-        }
-        setTeskText ("")
+          text: teaskText,
+        };
+        setTeskText("");
 
-        return[...state, newTask]
+        return [...state, newTask];
     }
   };
 
@@ -32,7 +32,7 @@ const PraticaUseReduce = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    dispatchTasks({type:"ADD"})
+    dispatchTasks({ type: "ADD" });
   };
   return (
     <div>

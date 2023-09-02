@@ -27,15 +27,13 @@ const PraticaUseEffect = () => {
     }
   }, [anotherNumber]);
 
-
   // 4 - cleanup do useEffect
   useEffect(() => {
-
     const timer = setTimeout(() => {
-      console.log("hello world")
-    }, 2000)
-    return () => clearTimeout(timer)
-  }, [anotherNumber])
+      console.log("hello world");
+    }, 2000);
+    return () => clearTimeout(timer);
+  }, [anotherNumber]);
   return (
     <>
       <hr />
