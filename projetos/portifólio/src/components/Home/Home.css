@@ -1,24 +1,91 @@
 .Home {
-    background-color: rgb(184, 184, 44);
-    width: 100vw;
-    height: 89vh;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    
+  background-color: rgb(255, 255, 255);
+  height: 90.7vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-
+.Info1 {
+  position: absolute;
+  top: 43.5%;
+  left: 40%;
+  transform: translate(-40%, -40%);
+  color: #000;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.Info2 {
+  position: absolute;
+  top: 49%;
+  left: 43%;
+  transform: translate(-45%, -45%);
+  color: #000;
+  text-align: center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: Inter;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.Info3 {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #d8b129;
+  text-align: center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.Info4 {
+  position: absolute;
+  top: 67%;
+  left: 46%;
+  transform: translate(-50%, -50%);
+  color: #000;
+  text-align: center;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.Info5 {
+  position: absolute;
+  top: 67%;
+  left: 57.2%;
+  transform: translate(-50%, -50%);
+  color: #d8b129;
+  text-align: center;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
 .Contato {
-    
-    justify-content: flex-start;
-    align-items: center;
-   
-    background-color: black;
-    
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: black;
+  width: 68px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-top: 20px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
-img {
-    
-    width: 80px;
-    height: 80px;
+.Contato img {
+  width: 58px;
+  height: 58px;
+}
+.Contato img:hover {
+    cursor: pointer;
 }
