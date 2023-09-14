@@ -3,6 +3,7 @@
   height: 90.7vh;
   display: flex;
   flex-direction: column;
+  
   justify-content: center;
 }
 
@@ -16,6 +17,7 @@
 }
 
 .Info1 {
+  display: flex;
   position: absolute;
   top: 400px;
   left: 750px;
@@ -27,7 +29,7 @@
   position: absolute;
   top: 460px;
   left: 816px;
-  transform: translate(-45%, -45%);
+  transform: translate(-100px, -50px);
   text-align: center;
   font-family: Inter;
   font-size: 100px;
@@ -37,6 +39,7 @@
   position: absolute;
   top: 560px;
   left: 950px;
+  
   transform: translate(-50%, -50%);
   text-align: center;
   color: #d8b129;
