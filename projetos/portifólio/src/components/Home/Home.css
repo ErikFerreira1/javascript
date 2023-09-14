@@ -5,73 +5,72 @@
   flex-direction: column;
   justify-content: center;
 }
+
+.Info1, .Info2, .Info3, .Info4, .Info5 {
+  position: absolute;
+  color: #000;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
 .Info1 {
   position: absolute;
-  top: 43.5%;
-  left: 40%;
+  top: 400px;
+  left: 750px;
   transform: translate(-40%, -40%);
-  color: #000;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   font-size: 23px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
 }
+
 .Info2 {
   position: absolute;
-  top: 49%;
-  left: 43%;
+  top: 460px;
+  left: 816px;
   transform: translate(-45%, -45%);
-  color: #000;
   text-align: center;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   font-family: Inter;
   font-size: 100px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
 }
+
 .Info3 {
   position: absolute;
-  top: 60%;
-  left: 50%;
+  top: 560px;
+  left: 950px;
   transform: translate(-50%, -50%);
-  color: #d8b129;
   text-align: center;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: #d8b129;
   font-size: 100px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
 }
+
 .Info4 {
   position: absolute;
-  top: 67%;
-  left: 46%;
+  top: 623px;
+  left: 875px;
   transform: translate(-50%, -50%);
-  color: #000;
   text-align: center;
   font-size: 28px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
 }
+
 .Info5 {
   position: absolute;
-  top: 67%;
-  left: 57.2%;
+  top: 623px;
+  left: 1089px;
   transform: translate(-50%, -50%);
-  color: #d8b129;
   text-align: center;
+  color: #d8b129;
   font-size: 28px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
 }
+
+@media (max-width: 768px) {
+  .Info1, .Info2, .Info3, .Info4, .Info5 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
 .Contato {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
   background-color: black;
   width: 68px;
   height: 250px;
@@ -87,5 +86,5 @@
   height: 58px;
 }
 .Contato img:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
