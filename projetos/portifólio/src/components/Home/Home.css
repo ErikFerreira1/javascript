@@ -21,7 +21,6 @@
 }
 
 .Info1 {
-  position: absolute;
   top: 44%;
   left: 39.5%;
   transform: translate(-40%, -40%);
@@ -29,7 +28,6 @@
 }
 
 .Info2 {
-  position: absolute;
   top: 50%;
   left: 43%;
   transform: translate(-45%, -45%);
@@ -37,16 +35,14 @@
 }
 
 .Info3 {
-  position: absolute;
   top: 70%;
   left: 108%;
   transform: translate(-50%, -50%);
-  color: rgb(245, 210, 13);
+  color: #e9c02d;
   font-size: 100px;
 }
 
 .Info4 {
-  position: absolute;
   top: 129%;
   left: 13%;
   font-size: 28px;
@@ -55,7 +51,7 @@
 .Info5 {
   padding-left: 10px;
   white-space: nowrap;
-  color: rgb(245, 210, 13);
+  color: #e9c02d;
   font-size: 28px;
 }
 

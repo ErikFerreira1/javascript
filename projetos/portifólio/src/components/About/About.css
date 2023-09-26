@@ -1,0 +1,19 @@
+.AboutMe {
+    display: flex;
+    flex-direction: row;
+}
+h1 {
+  color: #000;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.About {
+    
+    
+}
+img {
+    width: 100px;
+    height: 100px;
+}
