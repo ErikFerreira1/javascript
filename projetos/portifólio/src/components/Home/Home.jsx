@@ -18,13 +18,13 @@ const Home = () => {
 
       <article className="Contato">
         <a href="https://github.com/ErikFerreira1" target="blank">
-          <img src="../public/logos/LogoGitHub.png" />
+          <img src="../logos/LogoGitHub.png" />
         </a>
         <a href="https://www.linkedin.com/feed/" target="blank">
-          <img src="../public/logos/LogoLinkedin.png" />
+          <img src="../logos/LogoLinkedin.png" />
         </a>
         <a href="#">
-          <img src="../public/logos/LogoEmail.png" />
+          <img src="../logos/LogoEmail.png" />
         </a>
       </article>
     </div>
