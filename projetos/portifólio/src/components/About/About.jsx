@@ -17,10 +17,10 @@ const About = () => {
           quibusdam accusamus, voluptatem repudiandae ea?
           lorem
         </p>
-        
+        <hr />
 
         <div className="Skills" >
-        <hr />
+        
         <img src="../logos/LogoHTML5.png" />
         <img src="../logos/LogoCSS3.png" />
         <img src="../logos/LogoJavaScript.png" />
