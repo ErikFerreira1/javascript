@@ -21,9 +21,9 @@ const About = () => {
 
         <div className="Skills" >
         
-        <img src="../logos/LogoHTML5.png" />
-        <img src="../logos/LogoCSS3.png" />
-        <img src="../logos/LogoJavaScript.png" />
+        <img className="Html5" src="../logos/LogoHTML5.png" />
+        <img className="Css3" src="../logos/LogoCSS3.png" />
+        <img className="JS" src="../logos/LogoJavaScript.png" />
         <img className="React" src="../logos/LogoReact.png" />
         <img className="Python" src="../logos/LogoPython.png" />
         </div>
