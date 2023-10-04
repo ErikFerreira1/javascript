@@ -2,20 +2,19 @@ nav {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  
+
   height: 100px;
   background-color: black;
 }
 
-
 h2 {
   padding-right: 70px;
-  color: #D8B129;
+  color: #d8b129;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
   cursor: pointer;
 }
 h2:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }

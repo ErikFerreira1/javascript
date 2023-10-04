@@ -57,12 +57,13 @@
 
 .Contato {
   background-color: black;
-  width: 68px;
+  width: 70px;
   height: 250px;
   display: flex;
   flex-direction: column;
   gap: 15px;
   padding-top: 20px;
+  padding-left: 2px;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
 }
@@ -72,4 +73,5 @@
 }
 .Contato img:hover {
   cursor: pointer;
+  transform: scale(1.03);
 }
