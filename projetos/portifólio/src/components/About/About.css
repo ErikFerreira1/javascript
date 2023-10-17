@@ -12,25 +12,25 @@ h1 {
 }
 .About {
   position: absolute;
-  top: 101%;
-  left: -1%;
-  transform: translate(10%, -10%);
+  top: 934px;
+  left: 11px;
+  transform: translate(10px, -10px);
 }
 
 .NameSkills {
   position: absolute;
-  top: 148%;
-  left: -0.1%;
-  transform: translate(10%, -10%);
+  top: 1378px;
+  left: 11px;
+  transform: translate(10px, -10px);
 }
 
 p {
   display: block;
   color: rgb(0, 0, 0);
   position: absolute;
-  top: 97%;
-  left: -2%;
-  transform: translate(10%, 90%);
+  top: 990px;
+  left: 10 px;
+  transform: translate(10px, 90px);
   width: 700px;
   font-size: 20px;
 }
@@ -95,53 +95,11 @@ img {
 .Skills img:not(:hover) {
   transition: 1s ease;
 }
-.Eu {
+.Me {
   width: 500px;
   height: 500px;
   position: absolute;
   top: 109%;
   left: 62%;
  
-}
-.circle1{
-  width: 48px;
-  height: 50px;
-  background-color: black;
-  border-radius: 50%;
-
-  position: absolute;
-  top: 109.5%;
-  left: 81.4%;
-  transform: translate(50%, 50%);
-  
-  filter: blur(0.7px);
-
-
-}
-.circle2{
-  width: 30px;
-  height: 30px;
-  background-color: #e9c02d;
-  border-radius: 50%;
-
-  position: absolute;
-  top: 108.9%;
-  left: 84.1%;
-  transform: translate(50%, 50%);
-  
-  filter: blur(0.7px);
-  
-}
-.circle3 {
-  width: 20px;
-  height: 20px;
-  background-color: #e9c02d;
-  border-radius: 50%;
-
-  position: absolute;
-  top: 107.4%;
-  left: 83.5%;
-  transform: translate(50%, 50%);
-  
-  filter: blur(0.7px);
 }
