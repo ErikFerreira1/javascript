@@ -22,7 +22,12 @@ const About = () => {
           quibusdam accusamus, voluptatem repudiandae ea?
           lorem
         </p>
-
+        <div className="Picture">
+          <img className="Eu" src="../test/Exemplo.png"  />
+          <div className="circle1"></div>
+          <div className="circle2"></div>
+          <div className="circle3"></div>
+        </div>
 
         <div className="Skills" >
         
@@ -31,6 +36,7 @@ const About = () => {
         <img className="JS" src="../logos/LogoJavaScript.png" />
         <img className="React" src="../logos/LogoReact.png" />
         <img className="Python" src="../logos/LogoPython.png" />
+        
         </div>
       </div>
     </>

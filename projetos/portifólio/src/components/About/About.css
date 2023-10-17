@@ -95,3 +95,53 @@ img {
 .Skills img:not(:hover) {
   transition: 1s ease;
 }
+.Eu {
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  top: 109%;
+  left: 62%;
+ 
+}
+.circle1{
+  width: 48px;
+  height: 50px;
+  background-color: black;
+  border-radius: 50%;
+
+  position: absolute;
+  top: 109.5%;
+  left: 81.4%;
+  transform: translate(50%, 50%);
+  
+  filter: blur(0.7px);
+
+
+}
+.circle2{
+  width: 30px;
+  height: 30px;
+  background-color: #e9c02d;
+  border-radius: 50%;
+
+  position: absolute;
+  top: 108.9%;
+  left: 84.1%;
+  transform: translate(50%, 50%);
+  
+  filter: blur(0.7px);
+  
+}
+.circle3 {
+  width: 20px;
+  height: 20px;
+  background-color: #e9c02d;
+  border-radius: 50%;
+
+  position: absolute;
+  top: 107.4%;
+  left: 83.5%;
+  transform: translate(50%, 50%);
+  
+  filter: blur(0.7px);
+}
