@@ -6,9 +6,9 @@ const About = () => {
       <div className="AboutMe">
         
         <h1 className="About">SOBRE MIM </h1>
-        
+        <hr className="Separate_About"/>
         <h1 className="NameSkills">SKILLS</h1>
-        
+        <hr className="Separate_Skills"/>
         
         <p>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi
@@ -16,8 +16,13 @@ const About = () => {
           accusantium, facilis tenetur perferendis itaque natus impedit
           quibusdam accusamus, voluptatem repudiandae ea?
           lorem
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi
+          unde deleniti amet incidunt possimus maiores dolorum quo? Fugiat
+          accusantium, facilis tenetur perferendis itaque natus impedit
+          quibusdam accusamus, voluptatem repudiandae ea?
+          lorem
         </p>
-        <hr />
+
 
         <div className="Skills" >
         

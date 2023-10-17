@@ -1,5 +1,5 @@
 const Project = () => {
-  return <div>Project</div>;
+  return <div></div>;
 };
 
 export default Project;

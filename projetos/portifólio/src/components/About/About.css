@@ -1,71 +1,84 @@
 .AboutMe {
   display: inline-block;
-  height: 80vh;
+  height: 88vh;
+  
 }
 h1 {
   color: #000000;
-  font-size: 90px;
+  font-size: 72px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
 }
 .About {
   position: absolute;
-  top: 100%;
-  left: 5%;
+  top: 101%;
+  left: -1%;
   transform: translate(10%, -10%);
 }
 
 .NameSkills {
   position: absolute;
-  top: 100%;
-  left: 68%;
+  top: 148%;
+  left: -0.1%;
   transform: translate(10%, -10%);
 }
 
 p {
+  display: block;
   color: rgb(0, 0, 0);
   position: absolute;
-  top: 111.5%;
-  left: 6%;
+  top: 97%;
+  left: -2%;
   transform: translate(10%, 90%);
-  width: 500px;
+  width: 700px;
   font-size: 20px;
 }
 .Skills {
   display: flex;
   gap: 50px;
   position: absolute;
-  top: 125%;
-  left: 65%;
+  top: 167%;
+  left: 1%;
   transform: translate(10%, -10%);
 }
 
 .React {
   position: absolute;
-  top: 120%;
-  left: 15%;
-  transform: translate(10%, 40%);
+  top: 0%;
+  left: 112%;
+  transform: translate(10%, 1%);
   width: 115px;
 }
 
 .Python {
   position: absolute;
-  top: 120%;
-  left: 60%;
-  transform: translate(10%, 40%);
+  top: 0%;
+  left: 153%;
+  transform: translate(10%, 1%);
   height: 112px;
   width: 112px;
 }
 
-hr {
+.Separate_About {
+  
   position: absolute;
-  top: 130%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 5px;
-  height: 550px;
-  background: #d8b129;
+  top: 720px;
+  left: 214px;
+  transform: translate(73px, 0px) rotate(90deg);
+  width: 6px;
+  height: 587px;
+  background: #e9c02d;
+}
+.Separate_Skills {
+  
+  position: absolute;
+  top: 900px;
+  left: 214px;
+  transform: translate(73px, 258px) rotate(90deg);
+  width: 6px;
+  height: 587px;
+  background: #e9c02d;
 }
 img {
   width: 100px;
