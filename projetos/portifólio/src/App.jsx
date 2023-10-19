@@ -4,6 +4,7 @@ import Home from "./components/Home/Home";
 import NavBar from "./components/NavBar/NavBar";
 import Project from "./components/Project/Project";
 
+
 function App() {
   return (
     <>
