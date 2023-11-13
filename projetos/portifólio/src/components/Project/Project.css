@@ -1,77 +1,83 @@
-.Project {
-  height: 95vh;
-  padding-top: 30px;
+.grid-container {
+  display: grid;
+  grid-template-columns:1fr 1fr;
 }
-.Separate_Project {
-  position: absolute;
-  top: 1625px;
-  left: 214px;
-  transform: translate(73px, 0px) rotate(90deg);
-  width: 6px;
-  height: 587px;
-  background: #e9c02d;
-  box-sizing: border-box;
-}
-.Project h1 {
-  padding-left: 17px;
+.page_project > h1 {
+  padding-left: 20px;
+  padding-top: 10px;
+  font-size: 45px;
 }
 
-.ImageProject {
-  position: absolute;
-  top: 235%;
-  left: 41%;
-  transform: translate(-50%, -50%);
+.page_project > hr {
+  border-width: 7px;
+  width: 600px;
 
-  width: 900px;
-  height: 500px;
 }
-.Separate_Info {
-  position: absolute;
-  top: 234%;
-  left: 65%;
-  transform: translate(-50%, -50%);
-  width: 4px;
-  height: 450px;
-  background: #000000;
-  box-sizing: border-box;
-}
-.Info_Project {
-  position: absolute;
-  top: 234%;
-  left: 75%;
-  transform: translate(-50%, -50%);
-}
-.Info_Project h2 {
-  position: absolute;
-  top: -165%;
 
-  color: #000;
-  font-size: 30px;
-  text-decoration: none;
-  cursor: auto;
+.image_project {
+  padding-top: 50px;
+  padding-left: 80px;
 }
-.Info_Project h3 {
-    position: absolute;
-    top: -125%;
-    color: #000;
-    font-size: 20px;
+.image_project > img{
+  
+  width: 1000px;
+  height: 550px;
+  
+  
 }
-.Info_Project p {
-    position: absolute;
-    top: -184%;
-    color: #000;
-    font-size: 16px;
-    width: 400px;
+.about_project {
+  padding-right: 150px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  gap: 20px;
 }
-.Info_Project h4 {
-    position: absolute;
-    top: 10%;
-    color: #000;
-    font-size: 20px;
+.about_project > h2 { 
+  font-size: 28px;
+  color: black;
 }
-.Info_Project img {
-    
-    padding-top: 20px;
-    width: 80px;
-    height: 80px;
+.about_project > h3 {
+  color: #D8B129;
+}
+.about_project > p {
+  max-width: 400px; 
+  word-wrap: break-word; 
+}
+
+.imagens > img {
+  padding-right: 10px;
+  width: 70px;
+  height: 60px;
+
+}
+.imagens > .react {
+  
+  width: 70px;
+  height: 55px;
+  
+
+}
+.imagens img {
+  filter: brightness(0%);
+}
+.imagens img:hover {
+  transition: 0.4s;
+  filter: none;
+}
+
+.imagens img:not(:hover) {
+  transition: 1s ease;
+}
+.button > input{
+ width: 150px;
+ height: 35px;
+ font-size: 18px;
+ border-radius: 7px;
+ background-color: black;
+ color: white;
+ cursor: pointer;
+ margin-right: 15px;
+}
+.button > input:hover {
+  color: #D8B129;
 }
