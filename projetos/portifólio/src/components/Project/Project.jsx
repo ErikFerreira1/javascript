@@ -4,13 +4,13 @@ const Project = () => {
     <div>
       <div className="page_project">
         <h1>PROJETOS</h1>
-        <hr />
       </div>
 
       <div className="grid-container">
         <div className="image_project">
-          <img src="../test/ModeloProjeto.png" />
+          <img src="../imageProject/ModeloProjeto.png" />
         </div>
+        <div className="vertical_line"></div>
         <div className="about_project">
           <h2>E-COMMERCE</h2>
           <h3>SOBRE O PROJETO</h3>
@@ -22,8 +22,8 @@ const Project = () => {
           </p>
           <h3>TECNOLOGIAS USADAS</h3>
           <div className="imagens">
-            <img src="../test/LogoJavaScript.png" alt="" />
-            <img className="react" src="../test/LogoReact.png" alt="" />
+            <img src="../logos/LogoJavaScript.png" alt="" />
+            <img className="react" src="../logos/LogoReact.png" alt="" />
           </div>
           <div className="button">
             <input type="button" value="VISITAR" />
