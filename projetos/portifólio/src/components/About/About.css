@@ -1,105 +1,54 @@
-.AboutMe {
-  display: inline-block;
-  height: 88vh;
-  
+.Page_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 83vh;
 }
-h1 {
-  color: #000000;
-  font-size: 72px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
+.About_page > h1 {
+  border-bottom: 6px solid #d8b129;
+  width: 600px;
+  padding-left: 20px;
+  padding-top: 10px;
+  font-size: 45px;
 }
-.About {
-  position: absolute;
-  top: 934px;
-  left: 11px;
-  transform: translate(10px, -10px);
-}
-
-.NameSkills {
-  position: absolute;
-  top: 1378px;
-  left: 11px;
-  transform: translate(10px, -10px);
-}
-
-p {
-  display: block;
-  color: rgb(0, 0, 0);
-  position: absolute;
-  top: 990px;
-  left: 10 px;
-  transform: translate(10px, 90px);
-  width: 700px;
+.About_page > p {
   font-size: 20px;
+  max-width: 700px;
+  word-wrap: break-word;
+  margin: 30px;
 }
-.Skills {
-  display: flex;
-  gap: 50px;
-  position: absolute;
-  top: 167%;
-  left: 1%;
-  transform: translate(10%, -10%);
+.Skills_page {
+  padding-top: 100px;
 }
+.Skills_page > h1 {
+  border-bottom: 6px solid #d8b129;
+  width: 600px;
+  padding-left: 20px;
+  padding-top: 10px;
+  font-size: 45px;
+}
+.Skills_page > img {
+  margin: 30px;
 
-.React {
-  position: absolute;
-  top: 0%;
-  left: 112%;
-  transform: translate(10%, 1%);
-  width: 115px;
-}
-
-.Python {
-  position: absolute;
-  top: 0%;
-  left: 153%;
-  transform: translate(10%, 1%);
-  height: 112px;
-  width: 112px;
-}
-
-.Separate_About {
-  
-  position: absolute;
-  top: 720px;
-  left: 214px;
-  transform: translate(73px, 0px) rotate(90deg);
-  width: 6px;
-  height: 587px;
-  background: #e9c02d;
-}
-.Separate_Skills {
-  
-  position: absolute;
-  top: 900px;
-  left: 214px;
-  transform: translate(73px, 258px) rotate(90deg);
-  width: 6px;
-  height: 587px;
-  background: #e9c02d;
-}
-img {
   width: 100px;
   height: 100px;
 }
-.Skills img {
+.Skills_page > img {
   filter: brightness(0%);
 }
-.Skills img:hover {
+.Skills_page > img:hover {
   transition: 0.4s;
   filter: none;
 }
 
-.Skills img:not(:hover) {
+.Skills_page > img:not(:hover) {
   transition: 1s ease;
 }
-.Me {
+.Me_page {
+  display: flex;
+  justify-content: end;
+  padding-right: 200px;
+}
+.Me_page > img {
   width: 500px;
   height: 500px;
-  position: absolute;
-  top: 109%;
-  left: 62%;
- 
 }

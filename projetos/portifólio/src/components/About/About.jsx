@@ -3,32 +3,27 @@ import "./About.css";
 const About = () => {
   return (
     <>
-      <div className="AboutMe">
-        <h1 className="About">SOBRE MIM </h1>
-        <hr className="Separate_About" />
-        <h1 className="NameSkills">SKILLS</h1>
-        <hr className="Separate_Skills" />
+      <div className="Page_grid">
+        <div className="About_page">
+          <h1>SOBRE MIM</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi eum
+            ipsum doloremque fugiat repellendus omnis quaerat sed illum neque
+            aut iusto cumque cum consequuntur asperiores iste quia, placeat
+            similique tempore.
+          </p>
 
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi
-          unde deleniti amet incidunt possimus maiores dolorum quo? Fugiat
-          accusantium, facilis tenetur perferendis itaque natus impedit
-          quibusdam accusamus, voluptatem repudiandae ea? lorem Lorem ipsum,
-          dolor sit amet consectetur adipisicing elit. Excepturi unde deleniti
-          amet incidunt possimus maiores dolorum quo? Fugiat accusantium,
-          facilis tenetur perferendis itaque natus impedit quibusdam accusamus,
-          voluptatem repudiandae ea? lorem
-          
-        </p>
-
-        <img className="Me" src="../test/Exemplo.png" />
-
-        <div className="Skills">
-          <img className="Html5" src="../logos/LogoHTML5.png" />
-          <img className="Css3" src="../logos/LogoCSS3.png" />
-          <img className="JS" src="../logos/LogoJavaScript.png" />
-          <img className="React" src="../logos/LogoReact.png" />
-          <img className="Python" src="../logos/LogoPython.png" />
+          <div className="Skills_page">
+            <h1>SKILLS</h1>
+            <img src="../logos/LogoHTML5.png" />
+            <img src="../logos/LogoCSS3.png" />
+            <img src="../logos/LogoJavaScript.png" />
+            <img src="../logos/LogoReact.png" />
+            <img src="../logos/LogoPython.png" />
+          </div>
+        </div>
+        <div className="Me_page">
+          <img src="../test/Exemplo.png" />
         </div>
       </div>
     </>

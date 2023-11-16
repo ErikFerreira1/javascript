@@ -1,6 +1,7 @@
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 3% 1fr 1fr;
+  height: 88vh;
 }
 .page_project > h1 {
   border-bottom: 6px solid #d8b129;
@@ -28,6 +29,7 @@
 .image_project > img {
   width: 1000px;
   height: 550px;
+  margin: auto;
 }
 .about_project {
   display: flex;
