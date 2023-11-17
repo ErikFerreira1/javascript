@@ -1,7 +1,14 @@
+.page_project_all {
+  padding-top: 2em;
+}
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 3% 1fr 1fr;
   height: 88vh;
+  justify-content: center;
+  align-items: center;
+
+  
 }
 .page_project > h1 {
   border-bottom: 6px solid #d8b129;
@@ -34,8 +41,8 @@
 .about_project {
   display: flex;
   flex-direction: column;
-
-  margin: auto;
+  padding-top: 5em;
+  
   gap: 20px;
 }
 .about_project > h2 {
@@ -48,18 +55,20 @@
 .about_project > p {
   max-width: 400px;
   word-wrap: break-word;
+  text-align: justify;
 }
 .imagens {
   padding-top: 15px;
 }
 .imagens > img {
   padding-right: 10px;
-  width: 70px;
+  width: 60px;
   height: 60px;
 }
 .imagens > .react {
   width: 70px;
   height: 55px;
+  padding-left: 5px;
 }
 .imagens img {
   filter: brightness(0%);

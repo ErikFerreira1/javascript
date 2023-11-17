@@ -1,7 +1,7 @@
 import "./Project.css";
 const Project = () => {
   return (
-    <div>
+    <div className="page_project_all">
       <div className="page_project">
         <h1>PROJETOS</h1>
       </div>
