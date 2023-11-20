@@ -19,7 +19,6 @@
   font-weight: 400;
   line-height: normal;
 }
-
 .Info1 {
   top: 44%;
   left: 38%;
@@ -73,5 +72,5 @@
 }
 .Contato img:hover {
   cursor: pointer;
-  transform: scale(1.03);
+  transform: scale(1.031);
 }

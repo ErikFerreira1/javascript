@@ -10,7 +10,14 @@ const About = () => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi eum
             ipsum doloremque fugiat repellendus omnis quaerat sed illum neque
             aut iusto cumque cum consequuntur asperiores iste quia, placeat
-            similique tempore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, quis. Eos vero recusandae, tenetur esse quos molestias consectetur sequi ullam exercitationem incidunt quae atque ipsa! Quisquam saepe eveniet et culpa? Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, expedita ipsa ullam ut rem nulla perferendis sunt corporis dolor repellat illum molestiae quas repudiandae harum sapiente necessitatibus ea doloribus dolorem.
+            similique tempore. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Laborum, quis. Eos vero recusandae, tenetur esse
+            quos molestias consectetur sequi ullam exercitationem incidunt quae
+            atque ipsa! Quisquam saepe eveniet et culpa? Lorem ipsum dolor sit
+            amet consectetur adipisicing elit. Consequuntur, expedita ipsa ullam
+            ut rem nulla perferendis sunt corporis dolor repellat illum
+            molestiae quas repudiandae harum sapiente necessitatibus ea
+            doloribus dolorem.
           </p>
 
           <div className="Skills_page">
