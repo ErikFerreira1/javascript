@@ -22,11 +22,13 @@ const About = () => {
 
           <div className="Skills_page">
             <h1>SKILLS</h1>
-            <img src="../logos/LogoHTML5.png" />
-            <img src="../logos/LogoCSS3.png" />
-            <img src="../logos/LogoJavaScript.png" />
-            <img src="../logos/LogoReact.png" />
-            <img src="../logos/LogoPython.png" />
+            <div className="img_logos">
+              <img src="../logos/LogoHTML5.png" />
+              <img src="../logos/LogoCSS3.png" />
+              <img src="../logos/LogoJavaScript.png" />
+              <img src="../logos/LogoReact.png" />
+              <img src="../logos/LogoPython.png" />
+            </div>
           </div>
         </div>
         <div className="Me_page">

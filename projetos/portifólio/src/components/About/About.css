@@ -21,7 +21,7 @@
   padding-bottom: 3em;
 }
 .Skills_page {
-  padding-top: 10em;
+  padding-top: 3em;
 }
 .Skills_page > h1 {
   border-bottom: 6px solid #d8b129;
@@ -30,26 +30,30 @@
   padding-top: 10px;
   font-size: 45px;
 }
-.Skills_page > img {
+.img_logos {
+  display: flex;
+  white-space: nowrap;
+}
+.img_logos > img {
   margin: 30px;
   width: 100px;
   height: 100px;
 }
-.Skills_page > img {
+.img_logos > img {
   filter: brightness(0%);
 }
-.Skills_page > img:hover {
+.img_logos > img:hover {
   transition: 0.4s;
   filter: none;
 }
 
-.Skills_page > img:not(:hover) {
+.img_logos > img:not(:hover) {
   transition: 1s ease;
 }
 .Me_page {
   display: flex;
   justify-content: end;
-  padding-right: 11em;
+  padding-right: 12em;
   padding-top: 5em;
 }
 .Me_page > img {
